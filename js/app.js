@@ -16,7 +16,44 @@ var tim ="";
                     return env;
                 }
             }
-    },
+   		},
+		layout:function(){
+			var $window = $(window),
+			    doc = $("html,body"),
+				mc = $(".maincontent"),
+				p = $("#portfolio"),
+				nav = $(".nav li"),
+				footer = $("footer");
+			
+			function scrollTo(x){
+				doc.animate({
+					scrollTop:x
+				},500);
+			}
+			if( tim.getDevice() != "xs" ){
+				mc.css({
+					minHeight:$window.height() - 255
+				});
+				p.css({
+					minHeight:$window.height() - 120
+				});
+			}
+			nav.each(function(i,e){
+				var $this = $(e);
+				$this.on("click",function(){
+					$(".current").removeClass("current");
+					$this.find('a').addClass("current");
+					if(i == 0){
+						scrollTo(0);
+						return false;
+					}else if( i == 1){
+						scrollTo(p.offset().top-80);
+						return false;
+					}
+				
+				});
+			});
+		},
 		scroll_fn:function(){
 			var $window = $(window),
 				mh  = $('.mainheader'),
