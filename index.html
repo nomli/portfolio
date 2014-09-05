@@ -1,71 +1,138 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Portfolio by nomli</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Norman Omli - Front End Developer</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link href="css/view.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>  
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Portfolio</h1>
-        <p>My Portfolio Website</p>
+  ga('create', 'UA-54470791-1', 'auto');
+  ga('send', 'pageview');
 
-        <p class="view"><a href="https://github.com/nomli/portfolio">View the Project on GitHub <small>nomli/portfolio</small></a></p>
+</script>-->
+<div class="container-fluid">
+	<div class="row">
+		 <div class="mainheader">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							  <a class="navbar-brand" href="/">
+								<span class="myLogo pull-left"></span>
+								<div class="pull-right">
+									<p class="myName">Norman Omli</p>
+									<p class="myRole">Front End Developer</p>
+								</div>
+							  </a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-right" id="nav-collapse">
+						  <ul class="nav navbar-nav">
+							<li><a href="#" class="current">ABOUT</a></li>
+				  			<li><a href="#">PORTFOLIO</a></li>
+				  			<li><a href="http://nomli.github.io/onlineresume/" target="_blank">ONLINErESUME</a></li>
+				  			<li><a href="mailto:norman_omli@yahoo.com">CONTACT</a></li>
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+				  	</nav>
+		 		</div>
+		 	</div>
+		 </div>
+		 <div class="maincontent container">
+		 	<div class="row">
+		 		<div class="jumbotron">
+					<figure class="pull-right"><img src="img/me.png" alt=""></figure>
+		 			<h2>Hello my name is <span>Norman Omli!</span></h2>
+					<h3>I’m a Front End Developer.</h3>	
+		 		</div>
+				<div class="col-md-12">
+					<p class="bigboy">Summary</p>
+					<p>I have more than six years experience as a Front End Developer, building creative and effective websites. I'm mainly good at  html/5, css/3, javascript, jquery,
+and responsive web design that accommodate everything from mobile up to desktop.</p>
 
-
-        <ul>
-          <li><a href="https://github.com/nomli/portfolio/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/nomli/portfolio/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/nomli/portfolio">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/nomli">nomli</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+					<p class="bigboy text-center">Technical Skills</p>
+					<ul class="list-unstyled skillSet">
+						<li><img src="img/html5.jpg"/>
+							<p>HTML/5</p>
+						</li>
+						<li><img src="img/css.jpg"/>
+							<p>CSS/3</p>
+						</li>
+						<li><img src="img/javascript.jpg"/>
+							<p>JAVASCRIPT</p>
+						</li>
+						<li><img src="img/ps.jpg"/>
+							<p>PHOTOSHOP</p>
+						</li>
+						<li><img src="img/wordpress.jpg"/>
+							<p>WORDPRESS</p>
+						</li>
+						<li><img src="img/rwd.jpg"/>
+							<p>RWD</p>
+						</li>
+						<li><img src="img/ci.jpg"/>
+							<p>CODEIGNITER</p>
+						</li>
+						
+					</ul>
+					<p class="bigboy text-center">My Favorite Heroe's</p>
+					<ul class="list-unstyled skillSet">
+						<li>
+							<img src="img/bootstap.jpg"/>
+							<p>TWITTER BOOTSTRAP</p>
+						</li>
+						<li>
+							<img src="img/foundation.jpg"/>
+							<p>ZURB CODEIGNITER</p>
+						</li>
+						<li>
+							<img src="img/jquery.jpg"/>
+							<p>JQUERY</p>
+						</li>
+						<li>
+							<img src="img/sass.jpg"/>
+							<p>SASS/COMPASS</p>
+						</li>
+					</ul>
+					<p class="text-center">Some of the frameworks and libraries that i consider my helper tools, this guys make works easier and help me became more productive working on my projects and
+for many projects that i have work with this fs and thery are very reliable for me. </p>
+				</div>
+		 	</div>
+		 </div>
+	</div>
+</div><!--MAIN CONTAINER-->
+<span class="roller fa fa-arrow-up"></span>
+<footer>
+	<div class="container">
+		<div class="row clearfix">
+			<p class="pull-left">Copyright © 2014 by Norman Omli</p>
+			<a href="https://www.facebook.com/norman.omli" class="pull-right fa fa-facebook-square"></a>
+		</div>
+	</div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
