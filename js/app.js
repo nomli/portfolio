@@ -46,7 +46,9 @@ var tim ="";
 				var $this = $(e);
 				$this.on("click",function(){
 					$(".current").removeClass("current");
-					$this.find('a').addClass("current");
+					if(i != 4){
+						$this.find('a').addClass("current");
+					}
 					if(i == 0){
 						scrollTo(0);
 						return false;
