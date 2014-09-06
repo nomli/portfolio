@@ -85,9 +85,9 @@ body{
 	position:fixed;
 	top:0;
 	-webkit-transition: top 0.6s ease;
-    -moz-transition: top 0.6s ease;
-    -o-transition: top 0.6s ease;
-    transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  -o-transition: top 0.6s ease;
+  transition: top 0.6s ease;
 }
 
 .navbar-brand .myLogo{
@@ -96,12 +96,11 @@ body{
 	width:63px;
 	height:63px;
 	margin-right:5px;
-	
-	-webkit-transition: background-image 0.6s  ease;
-	-moz-transition: background-image 0.6s  ease;
-	-ms-transition: background-image 0.6s  ease;
-	-o-transition: background-image 0.6s  ease;
-	transition: background-image 0.6s  ease;
+	-webkit-transition: background-image 0.6s  linear;
+	-moz-transition: background-image 0.6s  linear;
+	-ms-transition: background-image 0.6s  linear;
+	-o-transition: background-image 0.6s  linear;
+	transition: background-image 0.6s  linear;
 }
 .headfix .navbar-brand .myLogo{
 	background:url('../img/me.png') no-repeat;
@@ -177,7 +176,7 @@ body{
 }
 .items{
 	padding:0;
-	margin-top:1%;
+	margin:1% 0 0 0;
 	text-align:center;
 }
 .items li{
@@ -187,7 +186,7 @@ body{
 	position:relative;
 	display:inline-block;
 	width:30%;
-	margin:0 5px 30px 5px;
+	margin:0 5px 20px 5px;
 }
 .items li a{
 	display: block;

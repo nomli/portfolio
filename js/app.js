@@ -20,22 +20,26 @@ var tim ="";
 		layout:function(){
 			var $window = $(window),
 			    doc = $("html,body"),
-				mc = $(".maincontent"),
-				p = $("#portfolio"),
-				nav = $(".nav li"),
-				footer = $("footer");
+					mh  = $('.mainheader'),
+					mc = $(".maincontent"),
+					p = $("#portfolio"),
+					nav = $(".nav li"),
+					fh = $("footer").outerHeight();
 			
 			function scrollTo(x){
 				doc.animate({
 					scrollTop:x
 				},500);
 			}
+			if($window.scrollTop() > 5){
+				mh.addClass("headfix");
+			}
 			if( tim.getDevice() != "xs" ){
 				mc.css({
 					minHeight:$window.height() - 255
 				});
 				p.css({
-					minHeight:$window.height() - 120
+					minHeight:$window.height() - (fh+80)
 				});
 			}
 			nav.each(function(i,e){
