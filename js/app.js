@@ -1,4 +1,4 @@
-var tim ="";
+var tim ={};
 (function ($){
 	tim ={
 		getDevice:function(){
