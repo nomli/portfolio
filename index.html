@@ -204,37 +204,20 @@ and responsive web design that accommodate everything from mobile up to desktop.
 		</div>
 	</div>
 </footer>
- <div style="display:none" class="error">
-      Looks like there was a problem saving the test object. Make sure you've set your application ID and javascript key correctly in the call to <code>Parse.initialize</code> in this file.
-    </div>
-
-    <div style="display:none" class="success">
-      <p>We've also just created your first object using the following code:</p>
-      
-        <code>
-          var TestObject = Parse.Object.extend("TestObject");<br/>
-          var testObject = new TestObject();<br/>
-          testObject.save({foo: "bar"});
-        </code>
-    </div>
 <script src="js/jquery.min.js"></script>
 <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 <script type="text/javascript">
-    Parse.initialize("hMYALmlDjk3tYswu3zD1KdaS3zBQIOVwBvHaihsR", "UUly3dMegJYLXXf2AV5UIX4YyRdrIJHaNMBOkLqs");
-    
+$(function(){
+ Parse.initialize("hMYALmlDjk3tYswu3zD1KdaS3zBQIOVwBvHaihsR", "UUly3dMegJYLXXf2AV5UIX4YyRdrIJHaNMBOkLqs");
     var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
-      testObject.save({foo: "bar"}, {
-      success: function(object) {
-        $(".success").show();
-      },
-      error: function(model, error) {
-        $(".error").show();
-      }
+    testObject.save({foo: "bar"}).then(function(object) {
+      alert("yay! it worked");
     });
-  </script>
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
