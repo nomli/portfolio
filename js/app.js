@@ -34,7 +34,7 @@ var tim ={};
 			if($window.scrollTop() > 5){
 				mh.addClass("headfix");
 			}
-			if( tim.getDevice() != "xs" ){
+			if( this.getDevice() != "xs" ){
 				mc.css({
 					minHeight:$window.height() - 255
 				});
@@ -71,11 +71,11 @@ var tim ={};
 					clearTimeout(scrollTimeout);
 					scrollTimeout = null;
 				}
-				scrollTimeout = setTimeout(scrollHandler,50);
+				scrollTimeout = setTimeout(scrollHandler.apply(tim),50);
 			});
 
 			scrollHandler = function () {
-				if( $window.scrollTop() > mh.outerHeight() && tim.getDevice() != "xs" ){
+				if( $window.scrollTop() > mh.outerHeight() && this.getDevice() != "xs" ){
                     mh.addClass("headfix");
 					rr.addClass('show');
                 }else{
@@ -93,7 +93,9 @@ var tim ={};
             var self = this;
             $.each(self,function(i,ele){
                 if(i !== "init"){
-                    setTimeout(ele,0);
+                    setTimeout(function(){
+											ele.apply(tim);
+										},0);
                 }
             });
 			
