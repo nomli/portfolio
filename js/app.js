@@ -1,6 +1,6 @@
-var tim ={};
+var myApp = myApp || {};
 (function ($){
-	tim ={
+	myApp ={
 		getDevice:function(){
             var envs = ['xs', 'sm', 'md', 'lg'];
 
@@ -71,7 +71,7 @@ var tim ={};
 					clearTimeout(scrollTimeout);
 					scrollTimeout = null;
 				}
-				scrollTimeout = setTimeout(scrollHandler.apply(tim),50);
+				scrollTimeout = setTimeout(scrollHandler.apply(myApp),50);
 			});
 
 			scrollHandler = function () {
@@ -94,12 +94,11 @@ var tim ={};
             $.each(self,function(i,ele){
                 if(i !== "init"){
                     setTimeout(function(){
-											ele.apply(tim);
-										},0);
+						ele.apply(myApp);
+					},0);
                 }
             });
-			
         }
 	};
-	tim.init();
+	myApp.init();
 }(jQuery));
