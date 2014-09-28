@@ -1,2 +1,384 @@
-@font-face{font-family:'ubuntu';src:url("../fonts/ubuntu/ubuntu-r-webfont.eot");src:url("../fonts/ubuntu/ubuntu-r-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/ubuntu/ubuntu-r-webfont.woff") format("woff"),url("../fonts/ubuntu/ubuntu-r-webfont.ttf") format("truetype"),url("../fonts/ubuntu/ubuntu-r-webfont.svg#ubunturegular") format("svg");font-weight:normal;font-style:normal}body{font-family:ubuntu}.navbar-default,.navbar{background:none;border-radius:0;border:0;margin:0;color:#fff}.navbar-brand{height:auto;padding:5px}.navbar-nav>li{padding:20px 0;margin-right:5px}.navbar-nav>li:last-child{padding:20px 25px}.navbar-default .navbar-nav>li>a{color:#fff;padding:5px 25px}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#e74c3c}.navbar-default .navbar-nav>li:last-child a{display:inline-block;padding:5px 0;margin:0 4px}.navbar-default .navbar-nav>li:last-child a:hover,.navbar-default .navbar-nav>li:last-child a:focus{color:#fff}.navbar-default .navbar-nav>li a:before{background:none repeat scroll 0 0 #676868;content:"";height:1px;left:0;opacity:0;position:absolute;top:-5px;transform:translateX(100%);transition:opacity 0.3s ease 0s, transform 0.5s linear 0s;width:100%}.navbar-default .navbar-nav>li a:after{background:none repeat scroll 0 0 #676868;content:"";height:1px;left:0;opacity:0;position:absolute;top:100%;transform:translateX(-100%);transition:opacity 0.3s ease 0s, transform 0.5s linear 0s;width:100%}.navbar-default .navbar-nav>li:last-child a:before,.navbar-default .navbar-nav>li:last-child a:after{width:0;height:0}.navbar-default .navbar-nav>li>a.current{border-bottom:1px solid #676868;color:#e74c3c}.nav>li>a:not(.current):hover:after,.nav>li>a:not(.current):hover:before{opacity:1;transform:translateX(0);color:#fff}.navbar-default .navbar-nav>li>a{color:#fff;font:bold 15px Arial}.navbar-nav>li.fa-facebook{font-size:30px}.navbar-nav>li.fa-facebook a{text-indent:200px;overflow:hidden}.jumbotron{background:#eee;text-align:center;border-radius:0 !important;position:relative;padding-top:28px;padding-bottom:28px}.mainheader{background:#1c2830;min-height:80px;border-bottom:5px solid #ff4e00;z-index:100;width:100%;top:-100%}.headfix{position:fixed;top:0;-webkit-transition:top 0.6s ease;-moz-transition:top 0.6s ease;-o-transition:top 0.6s ease;transition:top 0.6s ease}.navbar-brand .myLogo{background:url("../img/logo.png") no-repeat 0 0;display:inline-block;width:63px;height:63px;margin-right:5px;-webkit-transition:background-image 0.6s  ease;-moz-transition:background-image 0.6s  ease;-ms-transition:background-image 0.6s  ease;-o-transition:background-image 0.6s  ease;transition:background-image 0.6s  ease}.headfix .navbar-brand .myLogo{background:url("../img/me.png") no-repeat 0 0;-moz-background-size:100%;-webkit-background-size:100%;background-size:100%}.navbar-brand section{display:inline-block}.navbar-brand p{margin-bottom:0;color:#fff}.navbar-brand>div{padding-top:10px}.navbar-brand p.myName{font-size:18px;font-weight:bold;text-transform:uppercase}.navbar-brand p.myRole{font-size:15px}.jumbotron figure{display:table;margin:auto;position:absolute;top:0px;bottom:0px;right:5%}.jumbotron h2{font-size:39px}.jumbotron h2 span{color:#563e7d}.jumbotron .row{position:relative}.bigboy{font-size:25px;text-transform:uppercase}.skillSet{overflow:hidden;text-align:center}.skillSet li{display:inline-block;padding:5px 10px}.skillSet li p{margin:10px 0}#portfolio{min-height:500px;background:url(../img/keyboard-bg.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:fixed}#portfolio h2{text-align:center;color:#fff;font-family:Arial}.items{padding:0;margin:1% 0 0 0;text-align:center}.items li{overflow:hidden;background:#fff;min-height:200px;position:relative;display:inline-block;width:30%;margin:0 5px 20px 5px}.items li a{display:block;width:100%;height:100%;position:absolute;left:0;z-index:5}.items li div{background:rgba(28,40,40,0.8);position:absolute;bottom:-25%;left:0;width:100%;padding:5px 10px;z-index:6;-moz-transition:bottom 0.6s ease;-webkit-transition:bottom 0.6s ease;-o-transition:bottom 0.6s ease;transition:bottom 0.6s ease}.items li div>*{margin:0;font-family:Arial;text-transform:uppercase;color:#fff;text-align:left}.items li a:hover+div{bottom:0}.items li:nth-child(1) a{background:#a50000 url(../img/pf/hitlist_logo.png) no-repeat center center}.items li:nth-child(2) a{background:#fff url(../img/pf/docseekerlogo.png) no-repeat center center}.items li:nth-child(3) a{background:#91b9a5 url(../img/pf/ayalalandlogo.png) no-repeat center center}.items li:nth-child(4) a{background:#eaeaea url(../img/pf/itsmorefunlogo.png) no-repeat center center}.items li:nth-child(5) a{background:#fff url(../img/pf/nowlogo.png) no-repeat center center}.items li:nth-child(6) a{background:#b9657d url(../img/pf/gist.png) no-repeat center center}.items li:nth-child(7) a{background:#fff url(../img/pf/cllogo.jpg) no-repeat center center;-moz-background-size:90% auto;-webkit-background-size:90% auto;background-size:90% auto}.items li:nth-child(8) a{background:#e97941 url(../img/pf/westcologo.png) no-repeat center center}.items li:nth-child(9) a{background:#f7f7f7 url(../img/pf/vcplogo.png) no-repeat center center}.roller{position:fixed;bottom:102px;right:1%;font-size:40px;color:#676868;cursor:pointer;display:none;opacity:0;-moz-transition:opacity 0.6s linear;-webkit-transition:opacity 0.6s linear;transition:opacity 0.6s linear}.roller.show{opacity:1}footer{background:#333}footer p{color:#fff;margin:0;line-height:40px}footer a.fa{color:#fff;font-size:30px;text-decoration:none;margin-top:5px}@media only screen and (max-width: 768px){.navbar-nav>li{margin-right:0}.items li{width:90%}}
-/*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-r-webfont.eot");
+  src: url("../fonts/ubuntu/ubuntu-r-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-r-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-r-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-r-webfont.svg#ubunturegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*FONTS*/
+/*MOZILLA OUTLINE FIX*/
+*, a:hover, a:focus {
+  outline: 0;
+}
+
+body {
+  font-family: ubuntu;
+}
+
+/***OVERRIDES****/
+.navbar-default, .navbar {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 5px;
+}
+
+.navbar-nav > li {
+  padding: 20px 0;
+  margin-right: 5px;
+}
+
+.navbar-nav > li:last-child {
+  padding: 20px 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  padding: 5px 25px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #e74c3c;
+}
+
+.navbar-default .navbar-nav > li:last-child a {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0 4px;
+}
+
+.navbar-default .navbar-nav > li:last-child a:hover,
+.navbar-default .navbar-nav > li:last-child a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li a:before {
+  background: none repeat scroll 0 0 #676868;
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: -5px;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease 0s, transform 0.5s linear 0s;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav > li a:after {
+  background: none repeat scroll 0 0 #676868;
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease 0s, transform 0.5s linear 0s;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav > li:last-child a:before,
+.navbar-default .navbar-nav > li:last-child a:after {
+  width: 0;
+  height: 0;
+}
+
+.navbar-default .navbar-nav > li > a.current {
+  border-bottom: 1px solid #676868;
+  color: #e74c3c;
+}
+
+.nav > li > a:not(.current):hover:after,
+.nav > li > a:not(.current):hover:before {
+  opacity: 1;
+  transform: translateX(0);
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font: bold 15px Arial;
+}
+
+.navbar-nav > li.fa-facebook {
+  font-size: 30px;
+}
+
+.navbar-nav > li.fa-facebook a {
+  text-indent: 200px;
+  overflow: hidden;
+}
+
+.jumbotron {
+  background: #eee;
+  text-align: center;
+  border-radius: 0 !important;
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+/*******/
+.mainheader {
+  background: #1c2830;
+  min-height: 80px;
+  border-bottom: 5px solid #ff4e00;
+  z-index: 100;
+  width: 100%;
+  top: -100%;
+}
+
+.headfix {
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.6s ease;
+  -moz-transition: top 0.6s ease;
+  -o-transition: top 0.6s ease;
+  transition: top 0.6s ease;
+}
+
+.navbar-brand .myLogo {
+  background: url("../img/logo.png") no-repeat 0 0;
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+  margin-right: 5px;
+  -webkit-transition: background-image 0.6s  ease;
+  -moz-transition: background-image 0.6s  ease;
+  -ms-transition: background-image 0.6s  ease;
+  -o-transition: background-image 0.6s  ease;
+  transition: background-image 0.6s  ease;
+}
+
+.headfix .navbar-brand .myLogo {
+  background: url("../img/me.png") no-repeat 0 0;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.navbar-brand section {
+  display: inline-block;
+}
+
+.navbar-brand p {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.navbar-brand > div {
+  padding-top: 10px;
+}
+
+.navbar-brand p.myName {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-brand p.myRole {
+  font-size: 15px;
+}
+
+.jumbotron figure {
+  display: table;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 5%;
+}
+
+.jumbotron h2 {
+  font-size: 39px;
+}
+
+.jumbotron h2 span {
+  color: #563e7d;
+}
+
+.jumbotron .row {
+  position: relative;
+}
+
+.bigboy {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.skillSet {
+  overflow: hidden;
+  text-align: center;
+}
+
+.skillSet li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.skillSet li p {
+  margin: 10px 0;
+}
+
+/******/
+#portfolio {
+  min-height: 500px;
+  background: url(../img/keyboard-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#portfolio h2 {
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+}
+
+.items {
+  padding: 0;
+  margin: 1% 0 0 0;
+  text-align: center;
+}
+
+.items li {
+  overflow: hidden;
+  background: #fff;
+  min-height: 200px;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  margin: 0 5px 20px 5px;
+}
+
+.items li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+.items li div {
+  background: rgba(28, 40, 40, 0.8);
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  z-index: 6;
+  -moz-transition: bottom 0.6s ease;
+  -webkit-transition: bottom 0.6s ease;
+  -o-transition: bottom 0.6s ease;
+  transition: bottom 0.6s ease;
+}
+
+.items li div > * {
+  margin: 0;
+  font-family: Arial;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+
+.items li a:hover + div {
+  bottom: 0;
+}
+
+.items li:nth-child(1) a {
+  background: #a50000 url(../img/pf/hitlist_logo.png) no-repeat center center;
+}
+
+.items li:nth-child(2) a {
+  background: white url(../img/pf/docseekerlogo.png) no-repeat center center;
+}
+
+.items li:nth-child(3) a {
+  background: #91b9a5 url(../img/pf/ayalalandlogo.png) no-repeat center center;
+}
+
+.items li:nth-child(4) a {
+  background: #eaeaea url(../img/pf/itsmorefunlogo.png) no-repeat center center;
+}
+
+.items li:nth-child(5) a {
+  background: white url(../img/pf/nowlogo.png) no-repeat center center;
+}
+
+.items li:nth-child(6) a {
+  background: #b9657d url(../img/pf/gist.png) no-repeat center center;
+}
+
+.items li:nth-child(7) a {
+  background: white url(../img/pf/cllogo.jpg) no-repeat center center;
+  -moz-background-size: 90% auto;
+  -webkit-background-size: 90% auto;
+  background-size: 90% auto;
+}
+
+.items li:nth-child(8) a {
+  background: #e97941 url(../img/pf/westcologo.png) no-repeat center center;
+}
+
+.items li:nth-child(9) a {
+  background: #f7f7f7 url(../img/pf/vcplogo.png) no-repeat center center;
+}
+
+/****/
+.roller {
+  position: fixed;
+  bottom: 102px;
+  right: 1%;
+  font-size: 40px;
+  color: #676868;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  -moz-transition: opacity 0.6s linear;
+  -webkit-transition: opacity 0.6s linear;
+  transition: opacity 0.6s linear;
+}
+
+.roller.show {
+  opacity: 1;
+}
+
+footer {
+  background: #333;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+  line-height: 40px;
+}
+
+footer a.fa {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/*****MQ*****/
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .navbar-nav > li {
+    margin-right: 0;
+  }
+
+  .items li {
+    width: 90%;
+  }
+}
