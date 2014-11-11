@@ -1,7 +1,8 @@
 var myApp = myApp || {};
-(function ($){
+(function ($,$window){
 	myApp ={
 		getDevice:function(){
+		
             var envs = ['xs', 'sm', 'md', 'lg'];
 
             $el = $('<div>');
@@ -18,13 +19,12 @@ var myApp = myApp || {};
             }
    		},
 		layout:function(){
-			var $window = $(window),
-			    doc = $("html,body"),
-					mh  = $('.mainheader'),
-					mc = $(".maincontent"),
-					p = $("#portfolio"),
-					nav = $(".nav li"),
-					fh = $("footer").outerHeight();
+			var doc = $("html,body"),
+				mh  = $('.mainheader'),
+				mc = $(".maincontent"),
+				p = $("#portfolio"),
+				nav = $(".nav li"),
+				fh = $("footer").outerHeight();
 			
 			function scrollTo(x){
 				doc.animate({
@@ -61,10 +61,9 @@ var myApp = myApp || {};
 			});
 		},
 		scroll_fn:function(){
-			var $window = $(window),
-				mh  = $('.mainheader'),
-				rr = $('.roller'),
-				scrollTimeout;
+				var mh  = $('.mainheader'),
+					rr = $('.roller'),
+					scrollTimeout;
 			$window.scroll(function () {
 				if (scrollTimeout) {
 					// clear the timeout, if one is pending
@@ -101,4 +100,4 @@ var myApp = myApp || {};
         }
 	};
 	myApp.init();
-}(jQuery));
+}(jQuery,jQuery(window)));
