@@ -1,11 +1,11 @@
 var myApp = myApp || {};
-(function ($,$window){
-	myApp ={
-		getDevice:function(){
+(function ($, $window) {
+    myApp ={
+        getDevice: function(){
 		
-            var envs = ['xs', 'sm', 'md', 'lg'];
-
-            $el = $('<div>');
+            var envs = ['xs', 'sm', 'md', 'lg'],
+				$el = $('<div>');
+				
             $el.appendTo($('body'));
 
             for (var i = envs.length - 1; i >= 0; i--) {
@@ -18,7 +18,7 @@ var myApp = myApp || {};
                 }
             }
    		},
-		layout:function(){
+		layout: function(){
 			var doc = $("html,body"),
 				mh  = $('.mainheader'),
 				mc = $(".maincontent"),
@@ -49,10 +49,10 @@ var myApp = myApp || {};
 					if(i != 4){
 						$this.find('a').addClass("current");
 					}
-					if(i == 0){
+					if(i === 0){
 						scrollTo(0);
 						return false;
-					}else if( i == 1){
+					}else if( i === 1){
 						scrollTo(p.offset().top-80);
 						return false;
 					}
@@ -60,7 +60,7 @@ var myApp = myApp || {};
 				});
 			});
 		},
-		scroll_fn:function(){
+		scroll_fn: function(){
 				var mh  = $('.mainheader'),
 					rr = $('.roller'),
 					scrollTimeout;
@@ -73,7 +73,7 @@ var myApp = myApp || {};
 				scrollTimeout = setTimeout(scrollHandler.apply(myApp),50);
 			});
 
-			scrollHandler = function () {
+			var scrollHandler = function () {
 				if( $window.scrollTop() > mh.outerHeight() && this.getDevice() != "xs" ){
                     mh.addClass("headfix");
 					rr.addClass('show');
@@ -85,13 +85,13 @@ var myApp = myApp || {};
 			rr.on("click",function(){
 				$('html,body').animate({
 					scrollTop:0
-				},'fast', 'linear')
-			})
+				},'fast', 'linear');
+			});
 		},
-		init:function(){
+		init: function(){
             var self = this;
             $.each(self,function(i,ele){
-                if(i !== "init"){
+                if(i !== "init" && typeof(i) === "function"){
                     setTimeout(function(){
 						ele.apply(myApp);
 					},0);

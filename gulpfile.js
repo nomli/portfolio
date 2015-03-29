@@ -30,10 +30,9 @@ gulp.task('js',function(){
 		"source/js/app.js"
 	])
 	.pipe(sourcemaps.init())
-	.pipe(concat('all.js'))
+	.pipe(concat('app.min.js'))
 	.pipe(uglify())
 	.pipe(sourcemaps.write())
-	
 	.pipe(gulp.dest('build/js'))
 });
 //IMG OPTIMIZATIOn
