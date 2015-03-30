@@ -13,6 +13,8 @@ var pngquant = require('imagemin-pngquant');
 
 var minifyHTML = require('gulp-minify-html');
 
+var connect = require('gulp-connect');
+
 //CSS OPTIMIZATIOn
 gulp.task('css', function () {
 	gulp.src('source/sass/view.scss')
@@ -21,6 +23,7 @@ gulp.task('css', function () {
 	 .pipe(minifyCss())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('build/css'))	
+	.pipe(connect.reload());
 });
 //JAVASCRIPT OPTIMIZATIOn
 gulp.task('js',function(){
@@ -34,6 +37,19 @@ gulp.task('js',function(){
 	.pipe(uglify())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('build/js'))
+	.pipe(connect.reload())
+});
+//HTML MINIFY
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+ 
+  return gulp.src('source/*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest(''))
+	.pipe(connect.reload())
 });
 //IMG OPTIMIZATIOn
 gulp.task('img',function(){
@@ -53,14 +69,20 @@ gulp.task('img',function(){
 	}))
 	.pipe(gulp.dest('build/img/pf'));
 });
-gulp.task('minify-html', function() {
-  var opts = {
-    conditionals: true,
-    spare:true
-  };
- 
-  return gulp.src('source/*.html')
-    .pipe(minifyHTML(opts))
-    .pipe(gulp.dest(''));
+
+gulp.task('connect', function() {
+  connect.server({
+	  //host:"localhost/test",//you can point this if PHP
+	  livereload: true
+	});
 });
+
+gulp.task('watch', function () {
+  gulp.watch(['source/sass/css/*.scss'], ['css'])
+  gulp.watch(['source/js/*.js'], ['js'])
+  gulp.watch(['source/*.html'], ['minify-html'])
+});
+
+gulp.task('livereload', ['connect', 'watch']);
+
 gulp.task('default',['css','js','img','minify-html']);

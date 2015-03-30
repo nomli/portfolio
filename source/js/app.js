@@ -1,4 +1,5 @@
-var myApp = myApp || {};
+/*Main JS*/
+;var myApp = myApp || {};
 (function ($, $window) {
     myApp ={
         getDevice: function(){
@@ -91,7 +92,7 @@ var myApp = myApp || {};
 		init: function(){
             var self = this;
             $.each(self,function(i,ele){
-                if(i !== "init" && typeof(i) === "function"){
+                if(i !== "init" && typeof(ele) === "function"){
                     setTimeout(function(){
 						ele.apply(myApp);
 					},0);
