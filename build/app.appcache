@@ -7,7 +7,7 @@ css/view.css
 # JS
 js/jquery.min.js
 js/bootstrap.min.js
-js/app.js
+js/app.min.js
 
 # IMAGES
 
