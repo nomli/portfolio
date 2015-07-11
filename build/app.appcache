@@ -36,3 +36,18 @@ img/pf/itsmorefunlogo.png
 img/pf/nowlogo.png
 img/pf/vcplogo.png
 img/pf/westcologo.png
+
+# FONTS
+fonts/ubuntu/ubuntu-r-webfont.eot
+fonts/ubuntu/ubuntu-r-webfont.svg
+fonts/ubuntu/ubuntu-r-webfont.ttf
+fonts/ubuntu/ubuntu-r-webfont.woff
+fonts/fontawesome-webfont.eot
+fonts/fontawesome-webfont.svg
+fonts/fontawesome-webfont.ttf
+fonts/fontawesome-webfont.woff
+fonts/FontAwesome.otf
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/fontawesome-webfont.woff
