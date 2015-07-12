@@ -8,6 +8,7 @@ css/view.css
 js/jquery.min.js
 js/bootstrap.min.js
 js/app.min.js
+http://www.google-analytics.com/analytics.js
 
 # IMAGES
 
@@ -45,7 +46,9 @@ fonts/ubuntu/ubuntu-r-webfont.woff
 fonts/fontawesome-webfont.eot
 fonts/fontawesome-webfont.svg
 fonts/fontawesome-webfont.ttf
+fonts/fontawesome-webfont.ttf?v=4.2.0
 fonts/fontawesome-webfont.woff
+fonts/fontawesome-webfont.woff?v=4.2.0
 fonts/FontAwesome.otf
 fonts/glyphicons-halflings-regular.eot
 fonts/glyphicons-halflings-regular.svg
